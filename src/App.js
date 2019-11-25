@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Welcome from './components/Welcome'
+import LoginPage from './components/pages/LoginPage'
 import MenuBar from './components/MenuBar';
 import { Route, Switch } from "react-router";
 import './App.css';
@@ -19,7 +19,7 @@ export default class App extends React.Component {
       <div class="App">
         <MenuBar />
         <Switch>
-          <Route exact path='/' component={Welcome} />
+          <Route exact path='/' component={LoginPage} />
           <Route  path={getPath('registration')} component={RegistrationPage} />
           <Route  path={getPath('forgotPassword')} component={ForgotPasswordPage} />
         </Switch>
